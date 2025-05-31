@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 
 handle_error(){
 	echo "En Error Occure"

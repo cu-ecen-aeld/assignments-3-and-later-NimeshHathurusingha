@@ -1,0 +1,96 @@
+starting test with SKIP_BUILD="" and DO_VALIDATE=""
+Running test with user nimesh
+-- Generating ;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls_Runner.c from test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment3/Test_systemcalls.c
+-- Building executable including ;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello_Runner.c;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c;/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls_Runner.c test/assignment1/Test_hello.c;test/assignment1/Test_assignment_validate.c;test/assignment3/Test_systemcalls.c and ../examples/autotest-validate/autotest-validate.c;../examples/systemcalls/systemcalls.c
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nimesh/Desktop/eceu/build
+[  7%] Building C object assignment-autotest/Unity/src/CMakeFiles/unity.dir/unity.c.o
+[ 15%] Linking C static library libunity.a
+[ 15%] Built target unity
+[ 23%] Generating ../../assignment-autotest/test/assignment1/Test_hello_Runner.c, ../../assignment-autotest/test/assignment1/Test_assignment_validate_Runner.c, ../../assignment-autotest/test/assignment3/Test_systemcalls_Runner.c, ../../assignment-autotest/test/unity_runner.c
+Test files for auto dependency generation test/assignment1/Test_hello.c test/assignment1/Test_assignment_validate.c test/assignment3/Test_systemcalls.c
+Autogenerating runner for test/assignment1/Test_hello.c
+Autogenerating runner for test/assignment1/Test_assignment_validate.c
+Autogenerating runner for test/assignment3/Test_systemcalls.c
+Autogenerating test/unity_runner.c
+[ 30%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello.c.o
+[ 38%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate.c.o
+[ 46%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment3/Test_systemcalls.c.o
+[ 53%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_hello_Runner.c.o
+[ 61%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment1/Test_assignment_validate_Runner.c.o
+[ 69%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/assignment3/Test_systemcalls_Runner.c.o
+[ 76%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/autotest-validate/autotest-validate.c.o
+[ 84%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/__/examples/systemcalls/systemcalls.c.o
+[ 92%] Building C object assignment-autotest/CMakeFiles/assignment-autotest.dir/test/unity_runner.c.o
+[100%] Linking C executable assignment-autotest
+[100%] Built target assignment-autotest
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Running tests at /home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c : function test_systemcalls
+Remove trailing newline
+Read this is a test from testfile.txt
+system() echo this is a test returned this is a test
+Remove trailing newline
+Read home is /home/nimesh from testfile.txt
+system() echo home is $HOME returned: home is /home/nimesh
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c:28:test_systemcalls:PASS
+Running tests at /home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c : function test_exec_calls
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello.c:6:test_hello:INFO: Hello!  Your unity setup is working!
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_hello.c:4:test_hello:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment1/Test_assignment_validate.c:9:test_assignment_validate:PASS
+
+-----------------------
+1 Tests 0 Failures 0 Ignored 
+OK
+Running tests at /home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c : function test_systemcalls
+Remove trailing newline
+Read this is a test from testfile.txt
+system() echo this is a test returned this is a test
+Remove trailing newline
+Read home is /home/nimesh from testfile.txt
+system() echo home is $HOME returned: home is /home/nimesh
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c:28:test_systemcalls:PASS
+Running tests at /home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c : function test_exec_calls
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c:58:test_exec_calls:PASS
+Running tests at /home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c : function test_exec_redirect_calls
+Remove trailing newline
+Read home is /home/nimesh from testfile.txt
+execv /bin/sh -c echo home is $HOME returned home is /home/nimesh
+Remove trailing newline
+Read home is $HOME from testfile.txt
+execv /bin/echo home is $HOME returned home is $HOME
+/home/nimesh/Desktop/eceu/assignment-autotest/test/assignment3/Test_systemcalls.c:72:test_exec_redirect_calls:PASS
+
+-----------------------
+3 Tests 0 Failures 0 Ignored 
+OK
+Executing assignment test script
+~/Desktop/eceu/assignment-autotest/test/assignment3 ~/Desktop/eceu
+starting test with SKIP_BUILD  and DO_VALIDATE 
+~/Desktop/eceu/finder-app ~/Desktop/eceu/assignment-autotest/test/assignment3 ~/Desktop/eceu
+Using default directory /media/sf_VM_Share/tmp/aeld for output
+CLONING GIT LINUX STABLE VERSION v5.15.163 IN /media/sf_VM_Share/tmp/aeld
+[0;31mValidation Error:manual-linux script failed with 128[0m
+~/Desktop/eceu/assignment-autotest/test/assignment3 ~/Desktop/eceu
+~/Desktop/eceu/finder-app ~/Desktop/eceu/assignment-autotest/test/assignment3 ~/Desktop/eceu
+Kick off qemu in the background
+Wait for app to finish
+Missing kernel image at /tmp/aesd-autograder/Image
+[0;31mValidation Error:Running finder application on qemu failed with return code 1, see /tmp/aesd-autograder/serial.log for details[0m
+~/Desktop/eceu/assignment-autotest/test/assignment3 ~/Desktop/eceu
+Validation failed with error list :manual-linux script failed with 128:Running finder application on qemu failed with return code 1, see /tmp/aesd-autograder/serial.log for details
+Test of assignment assignment3 failed with rc=1
