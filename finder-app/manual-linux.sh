@@ -2,7 +2,6 @@
 # Script outline to install and build kernel.
 # Author: Siddhant Jajoo.
 
-PATH=/home/nimesh/Desktop/cross_toolchain/install-lnx/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin:$PATH
 
 set -e
 set -u
@@ -98,14 +97,14 @@ mkdir -p ${OUTDIR}/rootfs/lib64
 
 # TODO: Add library dependencies to rootfs
 TOOLCHAIN_DIR=/home/nimesh/Desktop/cross_toolchain/install-lnx/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu
-cp ${TOOLCHAIN_DIR}/aarch64-none-linux-gnu/libc/lib/ld-linux-aarch64.so.1 lib
-#cp ${TOOLCHAIN_DIR}/aarch64-none-linux-gnu/libc/lib64/ld-linux-aarch64.so.1 lib64
+cp ${FINDER_APP_DIR}/aarch64-none-linux-gnu/libc/lib/ld-linux-aarch64.so.1 lib
+#cp ${FINDER_APP_DIR}/aarch64-none-linux-gnu/libc/lib64/ld-linux-aarch64.so.1 lib64
 	   
 												   
 													
-cp ${TOOLCHAIN_DIR}/aarch64-none-linux-gnu/libc/lib64/libm.so.6 lib64
-cp ${TOOLCHAIN_DIR}/aarch64-none-linux-gnu/libc/lib64/libresolv.so.2 lib64
-cp ${TOOLCHAIN_DIR}/aarch64-none-linux-gnu/libc/lib64/libc.so.6 lib64
+cp ${FINDER_APP_DIR}/aarch64-none-linux-gnu/libc/lib64/libm.so.6 lib64
+cp ${FINDER_APP_DIR}/aarch64-none-linux-gnu/libc/lib64/libresolv.so.2 lib64
+cp ${FINDER_APP_DIR}/aarch64-none-linux-gnu/libc/lib64/libc.so.6 lib64
 
 # TODO: Make device nodes
 mkdir -p ${OUTDIR}/rootfs/dev
