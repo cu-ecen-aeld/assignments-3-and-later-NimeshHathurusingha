@@ -2,6 +2,8 @@
 # Script outline to install and build kernel.
 # Author: Siddhant Jajoo.
 
+PATH=/home/nimesh/Desktop/cross_toolchain/install-lnx/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin:$PATH
+
 set -e
 set -u
 
