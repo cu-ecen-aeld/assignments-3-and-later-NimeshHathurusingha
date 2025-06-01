@@ -16,11 +16,16 @@ jobs:
           - name: Run unit test
             run: ./unit-test.sh
     full-test:
-        container: cuaesd/aesd-autotest:24-assignment3
         runs-on: self-hosted
         steps:
           - uses: actions/checkout@v2
           - name: Checkout submodules
-            run : git submodule update --init --recursive
-          - name: Run full test
-            run: ./full-test.sh
+            run: git submodule update --init --recursive
+          - name: Run full test inside container with volume mount
+            run: |
+              docker run --rm \
+                -v "$PWD":/workspace \
+                -v /home/nimesh/Desktop/cross_toolchain:/toolchain \
+                -w /workspace \
+                cuaesd/aesd-autotest:24-assignment3 \
+                bash -c "export PATH=/toolchain/install-lnx/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu/bin:\$PATH && ./full-test.sh"
